@@ -1,0 +1,21 @@
+.a-singleDay
+    width: 1.8rem
+    height: 1.8rem
+    font-size: 1rem
+
+    @media all and (min-width: 640px)
+        font-size: 1rem
+        font-weight: 600
+
+        width: 2.6rem
+        height: 2.6rem
+
+    @apply border border-feldgrau text-black flex justify-center items-center bg-white flex-col
+
+    &.active
+        @apply text-alabaster bg-black
+    &.disabled
+        @apply bg-gray text-alabaster cursor-default opacity-40 border
+
+    &__dayName
+        font-size: 8px

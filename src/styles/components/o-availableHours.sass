@@ -1,0 +1,16 @@
+.o-availableHours
+
+    .day-part
+        flex: 1
+
+        @apply px-1
+
+        .title
+            border-bottom: 1px solid
+            @apply uppercase text-center border-gray border-opacity-40 mb-2 py-2
+
+        .single-slot
+            @apply border border-gray text-center border-gray my-1 cursor-pointer px-5 py-1 font-semibold
+
+            &:hover, &.active
+                @apply bg-black text-alabaster

@@ -1,0 +1,33 @@
+.admin-dashboard-calendar-wrapper {
+  .rbc-calendar {
+    .rbc-today {
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+    .rbc-time-content {
+      .rbc-day-slot {
+        &.rbc-now {
+          background-color: rgba(0, 0, 0, 0) !important;
+        }
+        .rbc-events-container {
+          margin: 0 1px !important;
+          .workHours {
+            width: 98% !important;
+            left: 1% !important;
+            position: relative !important;
+            .rbc-event-label {
+              display: none;
+            }
+          }
+          .eventClass {
+            width: 96% !important;
+            left: 2% !important;
+            border: 1px solid rgba(22, 22, 22, 0.5) !important;
+            border-radius: 3px !important;
+          }
+          .workHours {
+          }
+        }
+      }
+    }
+  }
+}
