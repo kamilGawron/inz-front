@@ -66,7 +66,7 @@ const WeekCalendar = function ({ onChange }) {
               tabIndex={0}
               onClick={onPrevWeekClick}
             >
-              <img
+              <img height="auto" width="auto"
                 className="chevron-icon"
                 src={chevronIcon}
                 alt=""
@@ -85,7 +85,7 @@ const WeekCalendar = function ({ onChange }) {
               tabIndex={0}
               onClick={onNextWeekClick}
             >
-              <img className="chevron-icon" src={chevronIcon} alt="" />
+              <img height="auto" width="auto" className="chevron-icon" src={chevronIcon} alt="" />
             </div>
           </div>
           <div className="m-weekdays">

@@ -15,7 +15,7 @@ const ServiceInline = function ({ name, time, price, onRemoveClick }) {
       </div>
       <div className="flex">
         <span className="mr-5">{price} PLN</span>
-        <img
+        <img height="auto" width="auto"
           onClick={onRemoveClick}
           src={binIcon}
           alt=""

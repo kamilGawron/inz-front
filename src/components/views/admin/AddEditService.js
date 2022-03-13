@@ -118,7 +118,7 @@ const AddEditService = function ({ service, mode, onComplete }) {
           <div className="o-addEditService__image mb-3">
             {uploadedImageSrc && (
               <div className="o-addEditService__image">
-                <img alt="" src={uploadedImageSrc} />
+                <img height="auto" width="auto" alt="" src={uploadedImageSrc} />
               </div>
             )}
           </div>
