@@ -1,10 +1,6 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "engines": {
-    "node": "12.22.0",
-    "yarn": "1.22.17"
-  },
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.3",
@@ -20,6 +16,7 @@
     "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "9",
     "axios": "^0.25.0",
+    "compression-webpack-plugin": "^9.2.0",
     "date-fns": "^2.26.0",
     "jsonwebtoken": "^8.5.1",
     "localforage": "^1.10.0",
