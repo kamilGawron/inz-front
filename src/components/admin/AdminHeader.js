@@ -78,7 +78,12 @@ export default function adminHeader(props) {
     <div>
       <TopHeaderWrapper>
         <AdminCompanyNameWrapper>
-          <AdminHeaderCompanyLogoImg height="50px" width="50px" src={props.logo} />
+          <AdminHeaderCompanyLogoImg
+            alt=""
+            height="50px"
+            width="50px"
+            src={props.logo}
+          />
           <AdminHeaderCompanyName>{props.name}</AdminHeaderCompanyName>
         </AdminCompanyNameWrapper>
         <AdminCurrentUserDataWrapper>

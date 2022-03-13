@@ -89,7 +89,12 @@ const Services = function () {
                 <ServiceItem>
                   <ServiceHeader>
                     <ServiceName>{e.title}</ServiceName>
-                    <ServiceImage height="50px" width="50px" src={`/build/icons/${e.photo}`} />
+                    <ServiceImage
+                      alt=""
+                      height="50px"
+                      width="50px"
+                      src={`/build/icons/${e.photo}`}
+                    />
                   </ServiceHeader>
 
                   <ServiceDescription>{e.description}</ServiceDescription>

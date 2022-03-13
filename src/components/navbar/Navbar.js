@@ -107,7 +107,12 @@ const MainNavbarComponent = function ({ items }) {
         className={mobileMenuBreakpoint <= currentWidth ? "desktop " : "mobile"}
       >
         <LogoWrapper className="logo-wrapper">
-          <LogoImageWrapper height="50px" width="50px" src={companyLogo} />
+          <LogoImageWrapper
+            alt=""
+            height="50px"
+            width="50px"
+            src={companyLogo}
+          />
           <BrandName>Brand Name</BrandName>
         </LogoWrapper>
         {mobileMenuBreakpoint <= currentWidth && (

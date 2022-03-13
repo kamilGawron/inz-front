@@ -48,7 +48,12 @@ const About = function () {
       <AboutContent>
         <Fade left duration={1000} delay={600} distance="30px">
           <AboutImageSection>
-            <OwnerImageWrapper height="50px" width="50px"src={homePageOwnerPhoto} />
+            <OwnerImageWrapper
+              alt=""
+              height="50px"
+              width="50px"
+              src={homePageOwnerPhoto}
+            />
           </AboutImageSection>
         </Fade>
 

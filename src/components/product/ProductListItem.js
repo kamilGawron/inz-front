@@ -99,7 +99,10 @@ const ProductListItem = function ({
       <div className="flex-grow flex items-center">
         {!hideImage && (
           <ImageWrapper>
-            <ProductImage height="40px" width="40px"
+            <ProductImage
+              alt=""
+              height="40px"
+              width="40px"
               src={
                 photo ? `${process.env.REACT_APP_API}${photo}` : noPhotoImage
               }
