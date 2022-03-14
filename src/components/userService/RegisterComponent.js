@@ -56,6 +56,7 @@ const registerFormInputs = (getValues) => [
 ];
 
 const Register = function () {
+  const [messageState, setMessageState] = useState("success");
   const { control, formState, getValues, watch, reset } = useForm({
     mode: "onSubmit",
   });
@@ -68,20 +69,32 @@ const Register = function () {
       email: watch().email,
       password: watch().password,
     };
-    const res = await registerUser(userData);
-    if (res) {
-      setMessage(res.data.message);
+    try{
+      const res = await registerUser(userData);
+      if (res) {
+        setMessageState("success");
+        setMessage('Konto założone pomyślnie!');
+        setVisibility("visible");
+        setTimeout(() => {
+          setVisibility("hidden");
+        }, 5000);
+        reset();
+      }
+    }catch(err){
+      setMessageState("error");
+      setMessage('Wystąpił błąd');
       setVisibility("visible");
       setTimeout(() => {
         setVisibility("hidden");
       }, 5000);
       reset();
     }
+    
   };
   return (
     <>
       <div className="m-auto max-w-max mt-5">
-        <Alert severity="success" className="mb-5" sx={{ visibility }}>
+        <Alert severity={messageState} className="mb-5" sx={{ visibility }}>
           {message}
         </Alert>
         <Box className="flex flex-col items-center justify-center">
